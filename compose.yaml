@@ -1,0 +1,24 @@
+services:
+  # mysql:
+  #   image: 'mysql:latest'
+  #   restart: always
+  #   environment:
+  #     - 'MYSQL_DATABASE=autumn'
+  #     - 'MYSQL_PASSWORD=Pe5^!t5CUac0B0MWds2qQSQsi'
+  #     - 'MYSQL_ROOT_PASSWORD=f0WKs4T_a2@FAjC3,e)W9]oap'
+  #     - 'MYSQL_USER=965MBVYFZZ1EQS5KHVTM7E9FZ'
+  #   ports:
+  #     - '3306'
+  mariadb:
+    image: 'mariadb:latest'
+    environment:
+      - 'MARIADB_DATABASE=autumn'
+      - 'MARIADB_PASSWORD=Pe5^!t5CUac0B0MWds2qQSQsi'
+      - 'MARIADB_ROOT_PASSWORD=f0WKs4T_a2@FAjC3,e)W9]oap'
+      - 'MARIADB_USER=965MBVYFZZ1EQS5KHVTM7E9FZ'
+    ports:
+      - '3306'
+  redis:
+    image: 'redis:latest'
+    ports:
+      - '6379'
